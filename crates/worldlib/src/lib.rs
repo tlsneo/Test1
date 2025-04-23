@@ -14,3 +14,7 @@ pub fn div(f1: f32, f2: f32) -> Result<f32, DivError> {
     let result = f1 / f2;
     Ok(result)
 }
+
+pub fn multi(a: usize, b: usize) -> usize {
+    a.checked_mul(b).unwrap_or_default()
+}

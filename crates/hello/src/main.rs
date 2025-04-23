@@ -9,6 +9,8 @@ async fn main() -> Result<(), Box<dyn Error>> {
     worldlib::print_sth("this is from hello".to_string());
     let result = worldlib::div(10., 5.).unwrap();
     println!("div result:{}", result);
+    let mult_result = worldlib::multi(100000, 999999);
+    println!("multi result:{}", mult_result);
     Ok(())
 }
 #[allow(dead_code)]
