@@ -5,7 +5,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
     let body = reqwest::get("https://www.baidu.com").await?.text().await?;
 
     println!("body:{}", body);
-
+    println!("hello world");
     Ok(())
 }
 #[allow(dead_code)]
