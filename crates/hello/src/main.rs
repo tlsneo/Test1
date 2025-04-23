@@ -7,6 +7,8 @@ async fn main() -> Result<(), Box<dyn Error>> {
     println!("body:{}", body);
     println!("hello world");
     worldlib::print_sth("this is from hello".to_string());
+    let result = worldlib::div(10., 5.).unwrap();
+    println!("div result:{}", result);
     Ok(())
 }
 #[allow(dead_code)]
